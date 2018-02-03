@@ -1,5 +1,5 @@
 # ClipboardUrlSovietizer
-Simple service for beautifying URLs passed to clipboard, decodes cyrillic and other special characters in URLs, however it will probably break a URL which contains encoded `/` (`%2F`), so use with caution.
+Simple service for beautifying URLs passed to clipboard, decodes cyrillic and other special characters in URLs, however it will probably break a URL which contains encoded `/` (`%2F`) and other characters used for `GET` requests, so use with caution.
 
 ### How-To:
  - Download and put [exectutable](https://github.com/Xorboo/ClipboardUrlSovietizer/releases) somewhere
