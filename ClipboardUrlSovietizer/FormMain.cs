@@ -166,7 +166,10 @@ namespace ClipboardUrlSovietizer
             RegistryKey rk = Registry.CurrentUser.OpenSubKey(RegistryPath, true);
 
             if (addToStartup)
-                rk.SetValue(AppName, Application.ExecutablePath + Program.MinimizedTag);
+            {
+                string path = String.Format("\"{0}\" {1}", Application.ExecutablePath, Program.MinimizedTag);
+                rk.SetValue(AppName, path);
+            }
             else
                 rk.DeleteValue(AppName, false);
 
